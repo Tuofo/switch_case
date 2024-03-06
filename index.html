@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+
+    <h1>Teste</h1>
+    <input type="text" id="v1" placeholder="escreva aqui!">
+    <input type="button" value="Enviar" onclick="teste()">
+    <div id="resultado"></div>
+
+    <script>
+        function teste() {
+        let teste1 = parseInt(document.getElementById("v1").value)
+
+        switch (teste1) {
+            case 1:
+                document.getElementById("resultado").innerHTML = "<br><input type='text' placeholder='teste'>";
+                break
+
+            case 2:
+                console.log("teste")
+                document.write("<input type='text' placeholder='teste'>")
+                break
+
+            default:
+                break
+        }
+
+        }
+    </script>
+    
+</body>
+</html>
